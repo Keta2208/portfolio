@@ -1,0 +1,172 @@
+.projects-section {
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  color: black;
+}
+
+.dark-mode .projects-section {
+  background-color: #121212;
+  color: white;
+}
+
+/* Title and Subtitle */
+.projects-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.projects-subtitle {
+  font-size: 1.5rem;
+  color: #3b82f6;
+  margin: 30px 10px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 1s ease-in-out forwards 0.3s;
+}
+
+/* Grid Layout */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Project Card */
+.project-card {
+  background-color: #1a1a2e;
+  color: white;
+  width: 250px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+/* Fade-in Animation */
+.project-card.fade-in {
+  opacity: 1;
+  transform: scale(1);
+  animation: bounceIn 1s ease-in-out forwards;
+}
+
+/* Hover Effect */
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Info */
+.project-info {
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Project Title */
+.project-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Project Description */
+.project-description {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+/* Project Links */
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Equal width buttons using flex */
+.github-btn, .live-demo-btn {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.5s, transform 0.2s ease-in-out;
+  flex-grow: 1; /* Make both buttons take equal width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* GitHub Button */
+.github-btn {
+  background-color: #333;
+  color: white;
+  gap: 5px;
+}
+
+.github-btn:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+.github-icon {
+  font-size: 1rem;
+}
+
+/* Live Demo Button */
+.live-demo-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.live-demo-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

@@ -1,0 +1,68 @@
+/* Reset all margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Sections layout */
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* Removed extra spacing */
+}
+
+/* Ensure full width */
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+.section{
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+}
+@keyframes bounceIn {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.about{
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+
+}
+.contact{
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+}
+
+.dark-mode .about{
+  background-color: #121212;
+  color: white;
+
+}
+.dark-mode .contact{
+  background-color: #121212;
+  color: white;
+}
