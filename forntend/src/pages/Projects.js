@@ -4,12 +4,6 @@ import { FaGithub } from "react-icons/fa"; // Import GitHub icon
 
 const projects = [
   {
-    title: "Netflix Clone",
-    description: "A fully responsive Netflix clone built using React and Firebase.",
-    github: "https://github.com/kevinshiroya123/netflix-clone",
-    liveDemo: "#",
-  },
-  {
     title: "Airbnb Clone",
     description: "An Airbnb-like platform built with MERN stack.",
     github: "https://github.com/Keta2208/Airbnb-clone",
