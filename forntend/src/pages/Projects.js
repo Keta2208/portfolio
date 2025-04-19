@@ -7,7 +7,7 @@ const projects = [
     title: "Airbnb Clone",
     description: "An Airbnb-like platform built with MERN stack.",
     github: "https://github.com/Keta2208/Airbnb-clone",
-    liveDemo: "#",
+    liveDemo: "https://keta2208.github.io/Airbnb-clone/",
   },
   {
   title: "Create Access",
